@@ -1,0 +1,207 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ten Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (2019-12-10)
+%
+% Original author: Piotr Kowalski
+%
+% License: (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{tenseconds} % a4paper for A4 or letterpaper
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+    \smartdiagram[bubble diagram]{
+        \textbf{Development}\\\textbf{Operations},
+        \textbf{Collaboration},
+        \textbf{Source}\\\textbf{Control}\\\textbf{Systems},
+        \textbf{Containers}\\\textbf{and}\\\textbf{Virtualization},
+        \textbf{Kubernetes}\\\textbf{Deployment},
+        \textbf{AWS},
+        \textbf{Test}\\\textbf{Automation}
+    }
+}
+
+% Hard skill bars
+\programming{{Scala $\textbullet$ C++  $\textbullet$ Java / 3}, {Jupyter $\textbullet$ Flask $\textbullet$ \large Sklearn / 5}, {HTML5 $\textbullet$ JS $\textbullet$ CSS / 3}, {\LaTeX $\textbullet$ Mongodb $\textbullet$ SQL / 4}}
+
+\hardskills{{GitHub $\textbullet$ GitLab / 5}, {Docker $\textbullet$ Docker-compose / 4}, {Kubernetes / 3.5}, {AWS / 3.5}}
+
+
+% Projects text
+\projects{
+    \textbf{Single Page Application} - Master Thesis: Application for supporting remote estimation ofstory points with the Planning Poker method \\
+    \textbf{Recomendation system for music and movies} - [GitHub] Application written in python with surprise libary \\
+    \textbf{Team Estimation Game} - [GitHub] Single Page application for team estimation game in reactjs and firebase \\
+    \textbf{Reddit scrapper} - [GitHub] Kubernetes application for reddit post scrapping deployed in AWS EC2 which uses celery and rabbitmq \\
+    \textbf{hate speech detector} - [GitHub] Deep learning models written in tensorflow for detecting hate speech in reddit posts \\
+}
+
+%----------------------------------------------------------------------------------------
+%    PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Karol Kowalski} % Your name
+\cvjobtitle{ Data scientist student } % Job
+% title/career
+\profilepic{img/karolkowalski.jpeg} % Profile picture
+\cvdate{26 January 1995}
+\cvlinkedin{/in/karol-kowalski-213a518b}
+\cvgithub{kk0walski}
+\cvnumberphone{(+48) 510 026 797} % Phone number
+\cvsite{None} % Personal website
+\cvmail{karol.kowalski95@gmail.com} % Email address
+%\cvinstagram{piotr.kowalski.prv} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+\section{Profile}
+%----------------------------------------------------------------------------------------
+%    PROFILE
+%----------------------------------------------------------------------------------------
+\textnormal{\faInfo} An IT enthusiast with 1 year of experience working in a variety of technology fields including Internet Technologies, Automation, Testing and Unix/Linux Administration.
+
+\textnormal{\faGraduationCap} A student of data science from Wroclaw University of Science and Technology. Faculty of Computer Science and Management BSc: "Application for supporting remote estimation of
+story points with the Planning Poker method". \vspace{2mm}
+
+\section{Education}
+%----------------------------------------------------------------------------------------
+%    EDUCATION
+%----------------------------------------------------------------------------------------
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+	{2018 - 2022}
+	{}
+	{Master of Science (M.Sc.), Data Science}
+	{\href{https://pwr.edu.pl/}{Wrocław University of Science and Technology, Poland}}
+	{}
+	{}
+	\twentyitem
+	{2014 - 2018}
+	{}
+	{Engineer's Degree (Eng.), Computer science and management}
+	{\href{https://pwr.edu.pl/}{Wrocław University of Science and Technology, Poland}}
+	{}
+	{}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+\section{Experience}
+%----------------------------------------------------------------------------------------
+%    EXPERIENCE
+%----------------------------------------------------------------------------------------
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+	{2017 - 2018}
+	{}
+	{Integration and Verification Working Student \textnormal{(Working Student)}}
+	{\href{https://nokiawroclaw.pl/}{Nokia Solutions and Networks, Poland}}
+	{}
+	{\begin{itemize}
+		\item Writting tests in robotframework
+		\item Configurating of test enviroment for 5G testing
+		\item Hardware configuration
+		\item Running tests
+	\end{itemize}}
+\end{twenty}
+
+\section{Projects}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+	{Aug 2020 -}
+	{Jan 2021}
+	{DevOps Engineer}
+	{Reddit posts scrapping}
+	{}
+	{\begin{itemize}
+		\item Helm charts deployment
+		\item Kubernetes
+		\item Docker
+		\item Celery apllication which uses rabbitmq queue for scrapping
+		\item Prometheus metrics and grafana charts
+		\end{itemize}}
+	\\
+	\twentyitem
+	{Aug 2017 -}
+	{Jan 2018}
+	{Backend Developer}
+	{Arte Laguna}
+	{}
+	{\begin{itemize}
+		\item Project made as a part of Software Design classes. Web application for supporting {\href{https://github.com/kk0walski/konkurs}{Arte Laguna Prize}}
+		\item Team size: 3
+		\item Technology: Python, Django framework
+		\end{itemize}}
+	\\
+	\twentyitem
+	{Feb 2018 -}
+	{Jun 2018}
+	{Frontend developer}
+	{Team Estimation Game}
+	{}
+	{\begin{itemize}
+		\item Single-page web application to play Team Estimation Game.
+		\item Team size: 4
+		\item Technology: ReactJS, Redux, Firebase, GitHub API
+		\item {\href{https://www.github.com/kk0walski/reactiveTeamEstimationGame}{Github address}}
+		\end{itemize}}
+	\\
+	\twentyitem
+	{Jun 2018 -}
+	{Feb 2019}
+	{Frontend developer}
+	{Planning Poker}
+	{}
+	{\begin{itemize}
+		\item Single-page application to support remote teams in estimating development goals through playingPlanning Poker.
+		\item Technology: ReactJS, Redux, Firebase, GitHub API
+		\end{itemize}}
+	\\
+	\twentyitem
+	{Feb 2020 -}
+	{May 2020}
+	{Python developer}
+	{Music and movies recomendation}
+	{}
+	{\begin{itemize}
+		\item System which recommends music and movies for users.
+		\item Team size: 2
+		\item Technologies: Pytorch, Surprise, Tensorflow
+		\end{itemize}}
+\end{twenty}
+
+%\section{Research}
+%%----------------------------------------------------------------------------------------
+%%    RESEARCH
+%%----------------------------------------------------------------------------------------
+%\begin{twenty}
+%    \twentyitem
+%        {2015 - 2017}
+%        {}
+%        {MSc. Candidate, Graduate Research Assistant}
+%        {\href{http://www.uoguelph.ca/}{University of Guelph}}
+%        {}
+%        {
+%        \textbf{Thesis}: Data Integration from Multiple Historical Sources to Study Canadian Casualties of WWI
+%        {\begin{itemize}
+%        \item Proposed a scalable stepwise deterministic method to reliably integrate datasets without labeled data. The method performs comparably with a method that incorporates a Support Vector Machine
+%        \item Constructed a rich longitudinal dataset to enable comphrehensive time-series analyses about WWI Canadian society and military
+%        \item \textbf{Tools}: R, Python, scikit-learn, BeautifulSoup, pandas, matplotlib \vspace{2mm}
+%        \end{itemize}}
+%        }
+%\end{twenty}
+
+\end{document}
